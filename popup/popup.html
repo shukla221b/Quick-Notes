@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Notes</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quick Notes</h1>
+    
+    <div class="note-input">
+      <textarea id="note-content" placeholder="Type your note here..."></textarea>
+      <div class="buttons">
+        <button id="save-note">Save</button>
+        <button id="clear-note">Clear</button>
+      </div>
+    </div>
+    
+    <div class="notes-list">
+      <div class="list-header">
+        <h2>Your Notes</h2>
+        <div class="search-container">
+          <input type="text" id="search-notes" placeholder="Search notes...">
+          <button id="clear-search">×</button>
+        </div>
+      </div>
+      <div id="notes-container"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
